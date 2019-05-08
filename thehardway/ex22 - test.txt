@@ -1,0 +1,33 @@
+I. Write every word and symbol that I've used in the previous exercises:
+II. After every word and symbol write a name and a description of what it does:
+List: 
+1. mkdir - creates a folder on the HDD of the OS
+2. cd something - open a folder on the HDD 
+3. cd .. - goes back one folder
+4. dir - lists the contents of the selected folder
+5. () parenthesis - used after a function. When left blank it will use the default settings of the function, or it can be used to set arguments to a function
+6. "" or '' double or single quotation marks - defines parts of a string
+7. string - module that contains a numbers of constants and classes, used to I/O a set of characters, displays text or exports information out of the program
+8. print("") - displays tha characters written in the ("")
+9. # - Stops(ignores) a line or segment of code from being read by Python, it's used to add developer notes in code
+10. + plus - math addition
+11. - minus - math subtraction
+12. / slash - math division
+13. * asterisk - math multiplication
+14. % percent - math percentage or modulus (X divided by Y with J remaining)
+15. < less-than - compares a smaller number with a bigger number
+16. > greater-thant - compares a bigger number with a smaller number
+17. <= less-than-equal - compares a smaller number with a bigger number or checks if they are equal
+18. >= greater-than-equal - compares a bigger number with a smaller number or checks if they are equal
+19. = equal - can be used to define a variable, provide data, or be used in mathematical operations/formulas
+20. == double-equal - tests whether two things have the same value
+21. _ underscore - connects two separate words, e.g. cat_milk
+22. {} curvy parenthesis - imbeds a variable inside a string
+23. f"" formatting - tells python to read the {} symbol inside of a string as a variable 
+24. .format() - another way to format a variable
+25. round() - function that rounds a number
+26. int() - tells python that the data should be read as an integer number
+27. float() - tells python that the data should be read as a floating number
+28. 
+III. After list is done, spend couple of days rewriting and double-checking that it's correct. Also memorize it.
+IV. After I've memorized the list make a table of symbols and their names
