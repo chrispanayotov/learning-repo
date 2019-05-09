@@ -18,5 +18,3 @@ txt_again = open(file_again)
 print(txt_again.read())
 # Close the reopened txt file
 txt_again.close()
-print close()
-read()
