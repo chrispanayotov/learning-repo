@@ -1,7 +1,12 @@
 import time, random
 
-dieMessage = ['You DIED! Thank goodness!', 'Good riddance.', 'My Condolences. You failed.', 'I will tell your parents that you died with honor.', 'I will tell your parents that you died for nothing.', 'Will somebody clean this up?']
-surviveMessage = ['YEEEHAW! I ain\'t gon die today!', 'Thank heavens! You didn\'t get your brains blown out!', 'You have not died... YET.', 'This is getting intense.', 'Dang.', 'Maybe next time...']
+dieMessage = ['You DIED! Thank goodness!', 'Good riddance.', 'My Condolences. You failed.', 
+'I will tell your parents that you died with honor.',
+'I will tell your parents that you died for nothing.',
+'Will somebody clean this up?']
+surviveMessage = ['YEEEHAW! I ain\'t gon die today!', 
+'Thank heavens! You didn\'t get your brains blown out!', 
+'You have not died... YET.', 'This is getting intense.', 'Dang.', 'Maybe next time...']
 
 while True:
     # Display the welcome message:
