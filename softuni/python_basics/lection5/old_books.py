@@ -1,16 +1,15 @@
 book_target = input()
 bookshelf_total = int(input())
-books = None
-counter = 0
 
-while counter < bookshelf_total:
+books_checked = 0
+
+while books_checked < bookshelf_total:
     books = input() 
     if books == book_target:
-        print(f"You checked {counter} books and found it.")
+        print(f"You checked {books_checked} books and found it.")
         break
-    counter += 1
-
-if books != book_target:
+    books_checked += 1
+else:
     print("The book you search is not here!")
-    print(f"You checked {counter} books.")
+    print(f"You checked {books_checked} books.")
         
