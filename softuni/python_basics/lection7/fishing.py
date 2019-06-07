@@ -2,7 +2,6 @@ n_fish = int(input())
 
 total = 0
 fish_counter = 0
-is_stopped = False
 
 for i in range(1, n_fish+1):
     lost_money = 0
@@ -10,7 +9,6 @@ for i in range(1, n_fish+1):
     fish_name = input()
 
     if fish_name == "Stop":
-        is_stopped = True
         break
 
     fish_kg = float(input())
@@ -29,7 +27,7 @@ for i in range(1, n_fish+1):
         lost_money /= fish_kg
         total -= lost_money
         
-if is_stopped == False:
+if fish_counter == n_fish:
     print(f"Lyubo fulfilled the quota!")
 
 if total >= 0:
