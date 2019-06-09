@@ -10,3 +10,7 @@ with open("/home/uriel/smarterway/potions.csv") as f:
 target = potions_list.index("Draught of Peace")
 pot_effect = target + 1
 print(potions_list[pot_effect])
+
+# with open("/home/uriel/smarterway/test_file.csv" , "a", newline='') as f:
+#     appender = csv.writer(f, delimiter=",")
+#     appender.writerow(["O", "M", "G"])
