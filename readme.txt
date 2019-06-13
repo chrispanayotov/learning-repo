@@ -1,2 +1,2 @@
 My Learning and Practice Repo with exercises from university, books and courses.
-Learning Git is going well so far.
+The repo is divided in two categories - python and javascript
