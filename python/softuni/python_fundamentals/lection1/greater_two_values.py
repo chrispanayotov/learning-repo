@@ -10,8 +10,7 @@ def compare_int(a, b):
     b = int(b)
     if a > b:
         return a
-    else:
-        return b
+    return b
 
 
 def compare_str(str_a, str_b):
@@ -25,8 +24,7 @@ def compare_str(str_a, str_b):
 
     if x > y:
         return str_a.title()
-    else:
-        return str_b.title()
+    return str_b.title()
 
 
 if __name__ == "__main__":
