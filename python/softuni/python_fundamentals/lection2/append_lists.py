@@ -30,6 +30,5 @@ for i in range(len(data), 0, -1):
     for char in x:
         if char != " ":
             pure_list.append(char)
-    
-
+            
 print(*pure_list)
