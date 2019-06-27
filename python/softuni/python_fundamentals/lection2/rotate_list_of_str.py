@@ -12,3 +12,4 @@ x = input().split(" ")
 p = 1
 
 x[p:] + x[:p]
+x[-p:]+x[:-p]
