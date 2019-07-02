@@ -18,3 +18,15 @@ def insertion_sort(nums):
         
         # Insert the item
         nums[j + 1] = item_to_insert
+
+def insertion_sort_reverse(nums):
+    # Sorts the numbers in descending order
+     for i in range(1, len(nums)):
+        item_to_insert = nums[i]
+        j = i - 1
+
+        while j >= 0 and nums[j] < item_to_insert:
+            nums[j + 1] = nums[j]
+            j -= 1
+
+        nums[j + 1] = item_to_insert
