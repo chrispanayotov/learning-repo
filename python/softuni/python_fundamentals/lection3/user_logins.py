@@ -12,7 +12,7 @@ while data != 'login':
     database[username] = password
     data = input()
 
-# Receiving the logins and checking if usrname and pass are correct
+# Receiving the logins and checking if username and pass are correct
 data = input()
 failed_logins = 0
 
