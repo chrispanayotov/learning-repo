@@ -18,6 +18,8 @@ while data[0] != 'end':
     host = data[0]
     domain = data[1]
 
+    # Tries to split the querries list; if it's empty creates an object 
+    # without querries
     try:
         querries_list = data[2].split(',')
         website_obj = Website(host, domain, querries_list)
