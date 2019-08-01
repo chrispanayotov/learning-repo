@@ -11,7 +11,7 @@ class Person:
     @age.setter
     def age(self, value):
         if value < 0:
-            print("Age must be positive!")
+            raise Exception("Age must be positive!")
         else:
             self.__age = value
     
@@ -23,7 +23,7 @@ class Person:
     @name.setter
     def name(self, value):
         if len(value) < 3:
-            print("Name's length should not be less than 3 symbols!")
+            raise Exception("Name's length should not be less than 3 symbols!")
         else:
             self.__name = value
     
@@ -43,11 +43,14 @@ class Child(Person):
     @age.setter
     def age(self, value):
         if value >= 15:
-            print("Child's age must be less than 15!")
+            raise Exception("Child's age must be less than 15!")
         if value < 0:
             raise Exception("Age must be positive!")
         else:
             self.__age = value
-    
-    def __str__(self):
-        return f"Name: {self.name}, Age: {self.age}"
+
+try:
+    person = Child(input(), int(input()))
+    print(person)
+except Exception as f:
+    print(f)
