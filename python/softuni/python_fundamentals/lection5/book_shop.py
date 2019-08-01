@@ -5,13 +5,15 @@
 # as any Book, but its price is always 30% higher.
 
 class Book:
+    """Class creates a book with an author, title and a price.
+    Has encapsulated setters that validate the attributes according to certain criteria"""
     def __init__(self, author, title, price):
         self.author = author
         self.title = title
         self.price = price
     
     def __str__(self):
-        return f"Type: {Book.__name__}\nTitle: {self.title}\nAuthor: {self.author}\nPrice: {self.price:.2f}"
+        return f"Type: {self.__class__.__name__}\nTitle: {self.title}\nAuthor: {self.author}\nPrice: {self.price:.2f}"
         
 
     @property
@@ -52,12 +54,14 @@ class Book:
 
 
 class GoldenEditionBook(Book):
+    """Class inherits all attributes from parent Book, 
+    only diferrence is that child adds a 30% increase in the price"""
     def __init__(self, author, title, price):
         super().__init__(author, title, price)
         self.price += price * 0.30
     
     def __str__(self):
-        return f"Type: {GoldenEditionBook.__name__}\nTitle: {self.title}\nAuthor: {self.author}\nPrice: {self.price:.2f}"
+        return f"Type: {self.__class__.__name__}\nTitle: {self.title}\nAuthor: {self.author}\nPrice: {self.price:.2f}"
 
 author = input()
 title = input()
