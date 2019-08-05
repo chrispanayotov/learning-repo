@@ -80,11 +80,9 @@ class Frog(Animal):
     def produce_sound(self):
         return 'Ribbit'
 
-is_failed = False
-
 while True:
     type_of_animal = input()
-    
+
     if type_of_animal == 'Beast!':
         break
 
