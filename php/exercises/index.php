@@ -5,7 +5,7 @@
 	<title>Document</title>
 </head>
 <body>
-	<form method="post" action="missing_letter.php">
+	<form method="post" action="dna.php">
         <textarea name="input"></textarea>
         <input type="submit" value="submit"/>
     </form>
