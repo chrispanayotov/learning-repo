@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test</title>
+  </head>
+
+  <body>
+
+    <script>
+        function solve(n) {
+            let html = '<table border="1">\n' + '<tr><th>x</th>';
+
+            for (let firstRow = 1; firstRow <= n; firstRow++) {
+                html += `<th>${firstRow}</th>`;
+            }
+
+            html += '</tr>\n';
+
+            for (let row = 1; row <=n; row++)
+            {
+                html += '<tr>';
+                html += `<th>${row}</th>`;
+
+            for (let col = row; col <= (n*row); col+=row) {
+              html += `<td>${col}</td>`;
+            }
+              html += '</tr>\n';
+            }
+        html += '</table>';
+        return html;
+        }
+
+        document.body.innerHTML = solve(5);
+        </script>
+
+</body>
+</html>
