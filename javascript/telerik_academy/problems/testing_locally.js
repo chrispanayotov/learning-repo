@@ -14,7 +14,7 @@ const test = [
     5
 ];
 
-const get = this.gets || getGets(test);
+const gets = this.gets || getGets(test);
 const print = this.print || console.log();
 
 // For numbers
