@@ -11,7 +11,7 @@ for (let i = 0; i < n; i++) {
     inputArray[i] = +gets();
 }
 
-// Clones and sorts the input array in descending order
+// Sorts the input array in descending order
 inputArray = inputArray.sort((a, b) => b - a); 
 
 // Gets the first k elements in the sorted array and appends them to resultArray
