@@ -13,22 +13,21 @@ function rot13(message) {
     let isLetter = function(str) {
         return str.length === 1 && str.match(/[a-z]/i);
     }
-    // Main for-loop, which loops over every character in message string
+    // For-loop iterates over every character in message string
     for (let char of message) {
         
-        // If block checks if char is a letter and lower-case using Ascii values
+        // Checks if character is both a letter and lower-case using Ascii values
         if (char === char.toLowerCase() && isLetter(char)) {
 
-            // If letter is lower than half of alphabet, directly add 13 to it
+            // If letter is located below 13th position in the alphabet
+            // -> then directly add 13 to it
             if (char.charCodeAt(0) > 96 && char.charCodeAt(0) < 110) {
                 let encryptedLetterLower = char.charCodeAt(0) + 13;
                 encryptedMessageArray.push(String.fromCharCode(encryptedLetterLower));
 
             // Replaces the letter with the 13th letter after it in the alphabet
             } else {
-                let x = 123 - char.charCodeAt(0);
-                let y = Math.abs(13 - x);
-                let resultLower = y + 97;
+                let resultLower = Math.abs(13 - (123 - char.charCodeAt(0))) + 97;
                 encryptedMessageArray.push(String.fromCharCode(resultLower));
             }
 
@@ -39,17 +38,11 @@ function rot13(message) {
                 encryptedMessageArray.push(String.fromCharCode(encryptedLetterUpper));
 
             } else {
-                let z = 91 - char.charCodeAt(0);
-                let w = Math.abs(13 - z);
-                let resultUpper = w + 65;
+                let resultUpper = Math.abs(13 - (91 - char.charCodeAt(0))) + 65;
                 encryptedMessageArray.push(String.fromCharCode(resultUpper));
             }
 
-        // If it is not a letter, checks if character is a space and pushes it
-        } else if (/\s/.test(char)) {
-            encryptedMessageArray.push(char);
-
-        // In any other case push the symbol to array
+        // In any other case push the symbol (or space) to array
         } else {
             encryptedMessageArray.push(char);
         }
@@ -57,4 +50,4 @@ function rot13(message) {
     return encryptedMessageArray.join('');
 }
 
-console.log(rot13('Test')); // => returns Grfg;
+console.log(rot13('Test 12@ Test')); // => returns Grfg 12@ Grfg;
