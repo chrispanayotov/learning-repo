@@ -1,9 +1,6 @@
 // Write a program that reverses the digits of a given decimal number.
 
-const input = 123.45;
+let input = gets();
 
-let x = input.toString();
-
-let y = x.split('').reverse().join('');
-
-console.log(Number(y));
+let x = input.split('').reverse().join('');
+print(x);
