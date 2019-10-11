@@ -1,7 +1,7 @@
 let englishString = 'test';
 let spanishString = 'el examen';
 
-// hncgk  idacias
+// returns ph pxamen
 
 function solve (english, spanish) {
     let alienMessageArray = [];
@@ -29,12 +29,14 @@ function solve (english, spanish) {
             continue;
         }
         
+        // If a letter from either languages is undefined, 
+        // it means the string is over, so append the letter from the opposite language
         if (!alphabetObject[english[i]]) {
             result = alphabetObject[spanish[i]];
         } else if (!alphabetObject[spanish[i]]) {
             result = alphabetObject[english[i]];
         }
-
+        //Converts the number result to a letter and push to array
         alienMessageArray.push(alphabetArray[result]);
     }
     console.log(alienMessageArray.join(''));
