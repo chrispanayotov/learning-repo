@@ -13,9 +13,10 @@ function solve (english, spanish) {
 
     let longestString = Math.max(english.length, spanish.length);
 
-    // Create an object letter being the key and number being the value
+    // Creates an object with letter being the key and number being the value
     // 'a': 0,
-    // 'b': 1 .. and so on
+    // 'b': 1  
+    // 'c': 2 ... and so on
     for (let i = 97; i < 123; i += 1) {
         alphabetObject[String.fromCharCode(i)] = incrementer;
         incrementer += 1;
