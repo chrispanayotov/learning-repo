@@ -3,41 +3,45 @@
 let n = 27;
 let primesArray = [];
 
+
+const isPrime = n => {
+    if (n < 0 || n === 0)
+        return false;
+    
+    for (let i = 2; i < n; i += 1) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
 // Check if numbers from 1 to N are Prime and pushes them to an array
 for (let num = 1; num <= n; num += 1) {
-    if (isPrime(num) === true) {
+    if (isPrime(num)) {
         primesArray.push(num);
     }
 }
 
-function isPrime(num) {
-    if (num < 1) return false;
-    if (num === 2) return true;
-  
-    let sqrt = Math.sqrt(num);
-  
-    for (let i = 2; i <= sqrt; i += 1) 
-      if (num % i === 0) return false;
-    return true;
-}
 
 // Function converts the prime numbers to 1s and prints the triangle
-function makeTriangle(height) {
-    let output = '';
+const makeTriangle = (height) => {
+    let createTriangle = '';
 
     for (let row = 0; row <= height; row += 1) {
 
         for (let i = 1; i <= primesArray[row]; i += 1) {
 
             if (primesArray.includes(i)) {
-                output += '1';
+                createTriangle += '1';
             } else {
-                output += '0';
+                createTriangle += '0';
             }
 
         }
-        console.log(output);
-        output = '';
+        console.log(createTriangle);
+        createTriangle = '';
     }
 }
 
