@@ -251,8 +251,8 @@
       <section class="section-stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4">
-            <source src="img/video.webm" type="video/webm">
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
             Your browser is not supported!
           </video>
         </div>
@@ -262,18 +262,29 @@
             We make people genuinely happy
           </h2>
         </div>
+
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img alt="Person on a tour" src="img/nat-8.jpg" class="story__img" />
+              <img
+                alt="Person on a tour"
+                src="img/nat-8.jpg"
+                class="story__img"
+              />
               <figcaption class="story__caption">
-               Mariyana Ivanova
+                Mariyana Ivanova
               </figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">I had the best week with my family</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                I had the best week with my family
+              </h3>
               <p>
-                Massa massa ultricies mi, quis hendrerit dolor magna eget est lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque habitant morbi! Venenatis urna cursus eget nunc scelerisque viverra mauris, in. Massa massa ultricies mi, quis hendrerit dolor magna eget est lorem ipsum. 
+                Massa massa ultricies mi, quis hendrerit dolor magna eget est
+                lorem ipsum dolor sit amet, consectetur adipiscing elit
+                pellentesque habitant morbi! Venenatis urna cursus eget nunc
+                scelerisque viverra mauris, in. Massa massa ultricies mi, quis
+                hendrerit dolor magna eget est lorem ipsum.
               </p>
             </div>
           </div>
@@ -282,15 +293,25 @@
         <div class="row">
           <div class="story">
             <figure class="story__shape">
-              <img alt="Person on a tour" src="img/nat-9.jpg" class="story__img" />
+              <img
+                alt="Person on a tour"
+                src="img/nat-9.jpg"
+                class="story__img"
+              />
               <figcaption class="story__caption">
                 Ivan Georgiev
               </figcaption>
             </figure>
             <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                WOW! My life is completely different now
+              </h3>
               <p>
-                Massa massa ultricies mi, quis hendrerit dolor magna eget est lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque habitant morbi! Venenatis urna cursus eget nunc scelerisque viverra mauris, in. Massa massa ultricies mi, quis hendrerit dolor magna eget est lorem ipsum. 
+                Massa massa ultricies mi, quis hendrerit dolor magna eget est
+                lorem ipsum dolor sit amet, consectetur adipiscing elit
+                pellentesque habitant morbi! Venenatis urna cursus eget nunc
+                scelerisque viverra mauris, in. Massa massa ultricies mi, quis
+                hendrerit dolor magna eget est lorem ipsum.
               </p>
             </div>
           </div>
@@ -300,7 +321,114 @@
           <a class="btn-text" href="#">Read all stories &rarr;</a>
         </div>
       </section>
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <div class="u-margin-bottom-medium">
+                <h2 class="heading-secondary">
+                  Start booking now!
+                </h2>
+              </div>
+              <form class="form" action="#">
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    placeholder="Full Name"
+                    type="text"
+                    id="name"
+                    required
+                  />
+                  <label class="form__label" for="name">Full name</label>
+                </div>
 
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    placeholder="Email address"
+                    type="email"
+                    id="email"
+                    required
+                  />
+                  <label class="form__label" for="email">Email address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      class="form__radio-input"
+                      type="radio"
+                      id="small"
+                      name="size"
+                    />
+                    <label class="form__radio-label" for="small">
+                      <span class="form__radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      class="form__radio-input"
+                      type="radio"
+                      id="large"
+                      name="size"
+                    />
+                    <label class="form__radio-label" for="large">
+                      <span class="form__radio-button"></span>
+                      Large tour group
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">
+                    Next step &rarr;
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Company</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built my <a class="footer__link" href="">Test</a> for his online
+            course <a class="footer__link" href="">Advanced CSS and Sass</a>.
+            Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use
+            this webpage for both personal and commercial use, but NOT to claim
+            it as your own design. A credit to the original author, Jonas
+            schmedtmann, is of course highly appreciated!
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
