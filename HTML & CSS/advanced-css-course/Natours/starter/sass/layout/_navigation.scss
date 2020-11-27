@@ -24,11 +24,11 @@
     top: 6.5rem;
     right: 6.5rem;
     background-image: radial-gradient(
-      $color-primary-light,
-      $color-primary-dark
+      $color-primary-dark,
+      $color-primary-light
     );
     z-index: 1000;
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
   }
 
   &__nav {
