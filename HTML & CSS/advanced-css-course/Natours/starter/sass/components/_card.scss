@@ -1,5 +1,4 @@
 .card {
-  // Functionality
   position: relative;
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -10,10 +9,8 @@
     top: 0;
     left: 0;
     width: 100%;
-
     border-radius: $border-round-3;
     box-shadow: 0 1.5rem 4rem $shadow-15;
-
     height: 52rem;
     transition: all 0.8s ease;
     backface-visibility: hidden;
@@ -140,6 +137,7 @@
 
   &__details {
     padding: 3rem;
+
     ul {
       list-style: none;
       width: 80%;
@@ -180,5 +178,49 @@
   &__price-value {
     font-size: 6rem;
     font-weight: 300;
+  }
+
+  @media only screen and (max-width: 56.25em),
+         only screen and (hover: none) {
+    height: auto;
+    border-radius: $border-round-3;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem $shadow-15;
+
+    &__side {
+      position: relative;
+      height: auto;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size: 4rem;
+    }
   }
 }
